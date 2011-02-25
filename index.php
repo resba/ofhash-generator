@@ -2,11 +2,9 @@
 error_reporting(E_ERROR | E_PARSE);
 if($_GET['form']=="1"){
 require("hash/OfHash.php");
-require("hash/OfInput.php");
 $hash = new OfHash();
 $password = $_GET['string'];
 $inputresult = $hash->hash($password);
-$string = new OfInput('string', '', '_GET');
 }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -16,7 +14,7 @@ $string = new OfInput('string', '', '_GET');
         <title></title>
     </head>
     <body>
-        <p>Hash Result: <?php echo $hash->getClean(); ?></p>
+        <p>Hash Result: <?php echo $inputresult ?></p>
         <!-- <p>Input Result: <?php // echo $hash; ?></p> -->
         <form id="form1" name="form1" method="get" action="index.php">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
