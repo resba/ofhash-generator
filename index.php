@@ -11,11 +11,13 @@ $inputresult = $hash->hash($password);
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <title>OfHash Hash Generator For OpenFlame.</title>
     </head>
-    <body>
-        <p>Hash Result: <?php echo $inputresult ?></p>
-        <!-- <p>Input Result: <?php // echo $hash; ?></p> -->
+    <body><?php if($_GET['form']=="1"){
+        <p>Hash Result: <?php echo $inputresult; ?></p>
+        <p>Your Hash Has been printed out above. Care to go another round?</p>
+        <?php }else{ ?>
+        <p>Put a text string in below to generate a hash.</p><?php } ?>
         <form id="form1" name="form1" method="get" action="index.php">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
