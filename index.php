@@ -13,7 +13,7 @@ $inputresult = $hash->hash($password);
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>OfHash Hash Generator For OpenFlame.</title>
     </head>
-    <body><?php if($_GET['form']=="1"){
+    <body><?php if($_GET['form']=="1"){ ?>
         <p>Hash Result: <?php echo $inputresult; ?></p>
         <p>Your Hash Has been printed out above. Care to go another round?</p>
         <?php }else{ ?>
