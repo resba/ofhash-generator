@@ -22,9 +22,9 @@ if($_GET['form']=="2"){
     </head>
     <body>
 
-        <h1>Hash Generator</h1>
+        <h1>OfHash Hash Generator</h1>
 <?php if($_GET['form']=="1"){ ?>
-        <p>Hash Result: <?php echo $inputresult; ?></p>
+        <p>Hash Result: <input name="textfield" type="text" id="textfield" value="<?php echo $inputresult; ?>" size="150" readonly="readonly" /></p>
         <p>Your Hash Has been printed out above. Care to go another round?</p>
         <?php }else{ ?>
         <p>Put a text string in below to generate a hash.</p><?php } ?>
@@ -40,7 +40,7 @@ if($_GET['form']=="2"){
     <tr>
       <td align="right">&nbsp;</td>
       <td><label>
-        <input type="submit" name="submit" id="submit" value="Generate Hash" />
+        <input type="submit" name="submit" id="submit" value="Submit" />
       </label></td>
     </tr>
   </table>
@@ -74,10 +74,19 @@ if($_GET['form']=="2"){
     <tr>
       <td align="right">&nbsp;</td>
       <td><label>
-        <input type="submit" name="submit" id="submit" value="Check Hash" />
+        <input type="submit" name="submit" id="submit" value="Submit" />
       </label></td>
     </tr>
   </table>
 </form>
+        <hr />
+        <p>OfHash Generator by <a href="http://www.github.com/resba">resba</a>. <a href="https://github.com/OpenFlame/OpenFlame-Framework">OfHash and OpenFlame Framework</a> by <a href="https://github.com/OpenFlame/">OpenFlame.</a></p>
+        <ul>
+            <li><a href="https://github.com/OpenFlame/OpenFlame-Framework/">OpenFlame Framework GitHub Repo</a></li>
+            <li><a href="https://github.com/OpenFlame/OpenFlame-Framework/blob/master/readme.markdown">What is OpenFlame and OfHash OpenFlame README?</a></li>
+            <li><a href="https://github.com/resba/ofhash-generator">OfHash Generator GitHub Repo</a></li>
+            <li><a href="https://github.com/resba/ofhash-generator/blob/master/README.md">OfHash Generator README</a></li>
+        </ul>
+        <hr />
     </body>
 </html>
