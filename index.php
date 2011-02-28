@@ -1,6 +1,9 @@
  <?php
+ //I don't believe in errors, therefore they are dead.
 error_reporting(E_ERROR | E_PARSE);
 //time to get rollin! hell yeah this is where the fun lives!
+//Basically, the system works like this: if the $_GET function 'form' equals one
+//s
 if($_GET['form']=="1"){
 require("hash/OfHash.php");
 $hash = new OfHash();
