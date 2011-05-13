@@ -8,6 +8,6 @@ Eventually I will work on the presentation and implementation of other possible 
 
 --How to use the Generator--
 
-Simply install MAMP or WAMP on your computer (Or upload it to a web server with PHP enabled) and navigate to the index page, hash away!
+Simply install MAMP, WAMP, or LAMP on your computer (Or upload it to a web server with PHP enabled) and navigate to the index page, hash away!
 
 If you don't want to go through the hassle, you can use the version on my website: http://ofhash.resbah.com/ (Link now works)
