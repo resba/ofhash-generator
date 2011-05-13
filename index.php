@@ -3,7 +3,6 @@
 error_reporting(E_ERROR | E_PARSE);
 //time to get rollin! hell yeah this is where the fun lives!
 //Basically, the system works like this: if the $_GET function 'form' equals one
-//s
 if($_GET['form']=="1"){
 require("hash/OfHash.php");
 $hash = new OfHash();
@@ -86,7 +85,7 @@ if($_GET['form']=="2"){
         <p>OfHash Generator by <a href="http://www.github.com/resba">resba</a>. <a href="https://github.com/OpenFlame/OpenFlame-Framework">OfHash and OpenFlame Framework</a> by <a href="https://github.com/OpenFlame/">OpenFlame.</a></p>
         <ul>
             <li><a href="https://github.com/OpenFlame/OpenFlame-Framework/">OpenFlame Framework GitHub Repo</a></li>
-            <li><a href="https://github.com/OpenFlame/OpenFlame-Framework/blob/master/readme.markdown">What is OpenFlame and OfHash OpenFlame README?</a></li>
+            <li><a href="https://github.com/OpenFlame/OpenFlame-Framework/blob/master/README.markdown">What is OpenFlame and OfHash OpenFlame README?</a></li>
             <li><a href="https://github.com/resba/ofhash-generator">OfHash Generator GitHub Repo</a></li>
             <li><a href="https://github.com/resba/ofhash-generator/blob/master/README.md">OfHash Generator README</a></li>
         </ul>
