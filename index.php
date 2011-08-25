@@ -21,6 +21,15 @@ if($_GET['form']=="2"){
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>OfHash Hash Generator For OpenFlame.</title>
+    <style>
+    body {
+     background-color: #111111;
+     color: #EEEEEE;
+     font-family: Verdana, Geneva, sans-serif;
+     padding: 0 0 0 0;
+     margin: 0 0 0 0;
+    }
+    </style>
     </head>
     <body>
 
