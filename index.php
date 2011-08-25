@@ -29,6 +29,12 @@ if($_GET['form']=="2"){
      padding: 0 0 0 0;
      margin: 0 0 0 0;
     }
+    a:link {
+     color: #DDDDDD;
+    }
+    a:visited {
+     color: #CCCCCC;
+    }
     </style>
     </head>
     <body>
