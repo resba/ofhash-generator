@@ -10,4 +10,4 @@ Eventually I will work on the presentation and implementation of other possible 
 
 Simply install MAMP, WAMP, or LAMP on your computer (Or upload it to a web server with PHP enabled) and navigate to the index page, hash away!
 
-If you don't want to go through the hassle, you can use the version on my website: http://ofhash.resbah.com/ (Link now works)
+If you don't want to go through the hassle, you can use the version on my website: http://ofhash.pagodabox.com/ (Link now works)
