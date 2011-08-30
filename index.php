@@ -12,8 +12,8 @@ $inputresult = $hash->hash($password);
 if($_POST['form']=="2"){
     require("hash/OfHash.php");
     $hash = new OfHash();
-    $input_password_string = $_GET['string1'];
-    $stored_password_hash = $_GET['string2'];
+    $input_password_string = $_POST['string1'];
+    $stored_password_hash = $_POST['string2'];
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
