@@ -3,13 +3,13 @@
 error_reporting(E_ERROR | E_PARSE);
 //time to get rollin! hell yeah this is where the fun lives!
 //Basically, the system works like this: if the $_GET function 'form' equals one
-if($_GET['form']=="1"){
+if($_POST['form']=="1"){
 require("hash/OfHash.php");
 $hash = new OfHash();
 $password = $_GET['string'];
 $inputresult = $hash->hash($password);
 }
-if($_GET['form']=="2"){
+if($_POST['form']=="2"){
     require("hash/OfHash.php");
     $hash = new OfHash();
     $input_password_string = $_GET['string1'];
@@ -40,12 +40,12 @@ if($_GET['form']=="2"){
     <body>
 
         <h1>OfHash Hash Generator</h1>
-<?php if($_GET['form']=="1"){ ?>
+<?php if($_POST['form']=="1"){ ?>
         <p>Hash Result: <input name="textfield" type="text" id="textfield" value="<?php echo $inputresult; ?>" size="150" readonly="readonly" /></p>
         <p>Your Hash Has been printed out above. Care to go another round?</p>
         <?php }else{ ?>
         <p>Put a text string in below to generate a hash.</p><?php } ?>
-        <form id="form1" name="form1" method="get" action="index.php">
+        <form id="form1" name="form1" method="post" action="index.php">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td align="right">String:</td>
@@ -65,7 +65,7 @@ if($_GET['form']=="2"){
         <hr />
         <h2>Hash Check</h2>
         <p>The hash check allows you to check the a password hash against an input string. You must supply the hash and the correct input string for this form to work.</p>
-        <?php if($_GET['form']=="2"){ ?>
+        <?php if($_POST['form']=="2"){ ?>
         <p><?php if($hash->check($input_password_string, $stored_password_hash)){
         echo "Hash check has succeeded. The input string does match the hash.";
     }else{
@@ -73,7 +73,7 @@ if($_GET['form']=="2"){
     } ?></p>
         <?php }else{ ?>
         <p>Put a text string in below to generate a hash.</p><?php } ?>
-                <form id="form2" name="form2" method="get" action="index.php">
+                <form id="form2" name="form2" method="post" action="index.php">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td align="right">String:</td>
